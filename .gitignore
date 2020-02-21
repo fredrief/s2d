@@ -1,0 +1,16 @@
+# vim files
+*.swp
+*.swo
+
+# system files
+*.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+app/__pycache__/
+*.pyc
+*.pyo
+
+# IDE config
+.idea/
+.idea
