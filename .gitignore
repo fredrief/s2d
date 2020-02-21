@@ -14,3 +14,7 @@ app/__pycache__/
 # IDE config
 .idea/
 .idea
+
+#Images and docs
+static/images/
+docs/
