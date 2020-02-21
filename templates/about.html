@@ -1,0 +1,45 @@
+{% extends "main_template.html" %}
+{% block maincontent %}
+
+<body>
+<header>
+    <nav class="title">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Slides To Doc</a></li>
+        </ul>
+    </nav>
+    <nav class="meny">
+        <ul>
+            <li><a class="menytekst" href="{{ url_for('about_eng') }}">ENG</a>
+            <li><a class="menytekst aktiv" href="">Om siden</a>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="main_content_container">
+        <div class="main_content">
+            <h3>Om siden</h3>
+            <p> På denne nettsiden kan du konvertere presentasjoner i pdf-format til word-dokumenter, spesielt egnet
+                for forelesningsnotater.
+                <br><br>
+
+                Programmet forsøker å sile ut bilder og tekst som ikke er relevant, samt å beholde den opprinnelige
+                strukturen på teksten. "Vanlige" slides med tittel og kulepunkter fungerer som regel ganske bra,
+                men andre layout, f.eks. tabeller, blir ofte dårlige. <br>
+                Selv om resultatet sjelden blir prefekt, vil det antakelig gi et godt utgangspunkt
+                og spare deg mye tid sammenlignet med å kopiere over alt innholdet manuelt.
+                <br><br>
+
+                Siden er laget av Fredrik Feyling og jeg tar gjerne imot tilbakemeldinger på fredrik.feyling@hotmail.com
+            </p>
+        </div>
+    </section>
+</main>
+</body>
+<script>
+$("#upload_slide_submit").click(function(){
+  $("#wait").show();
+});
+
+</script>
+{% endblock %}

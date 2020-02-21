@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='s2d_stylesheet.css') }}" />
+
+    {% if title %}
+        <title>S2D - {{ title }}</title>
+    {% else %}
+        <title>S2D</title>
+    {% endif %}
+
+</head>
+
+{% block maincontent %}{% endblock %}
+</html>

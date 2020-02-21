@@ -1,0 +1,43 @@
+{% extends "main_template.html" %}
+{% block maincontent %}
+
+<body>
+<header>
+    <nav class="title">
+        <ul>
+            <li><a href="{{ url_for('home_eng') }}">Slides To Doc</a></li>
+        </ul>
+    </nav>
+    <nav class="meny">
+        <ul>
+            <li><a class="menytekst" href="{{ url_for('about') }}">NO</a>
+            <li><a class="menytekst aktiv" href="">About</a>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="main_content_container">
+        <div class="main_content">
+            <h3>About the page</h3>
+            <p>This page lets you convert presentation slides in pdf format to a docx document, suited for taking notes
+                in lectures. The service is aimed towards medical students and other students taking notes on computer.
+                <br><br>
+                The program will try to sort out the relevant content of the slides and keep the bullet point structure
+                of the text. It is trained using a number of different presentations, but as the presentation style varies a lot,
+                the result is not always as good. However, it usually saves you a lot of time compared to copy-pasting all the
+                content manually.
+                <br><br>
+                The page is written by Fredrik Feyling, and I gladly receive feedback, questions or comments on email:
+                fredrik.feyling@hotmail.com
+            </p>
+        </div>
+    </section>
+</main>
+</body>
+<script>
+$("#upload_slide_submit").click(function(){
+  $("#wait").show();
+});
+
+</script>
+{% endblock %}
