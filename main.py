@@ -11,4 +11,9 @@ NUMBERED_LIST_CHARACTERS = ["1.","2.","3.","4.","5.","6.","7.","8.","9.","10."]
 
 
 if __name__ == '__main__':
-    convert("slides/hd.pdf", "docs/hd.docx")
+    files = os.listdir("slides")
+    for file in files:
+        if not file.startswith("."):
+            print("Converting file: {}".format(file))
+            print("Progress:")
+            convert("slides/" + file, "docs/" + file.split(".pdf")[0] + ".docx")

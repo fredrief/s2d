@@ -18,3 +18,4 @@ app/__pycache__/
 #Images and docs
 static/images/
 docs/
+slides/

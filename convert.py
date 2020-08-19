@@ -41,6 +41,7 @@ def convert(pdf_doc_filename, docx_filename):
     ############ CONVERT OTHER PAGES ##################
     for page_index in range(len(doc)):
         if 0<page_index:
+            print("{}%".format(math.ceil(page_index/len(doc)*100)))
             page = doc[page_index]
             txtblocks, imblocks = get_blocks(page)
 
